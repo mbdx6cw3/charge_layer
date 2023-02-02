@@ -1,0 +1,37 @@
+  zero_iron
+  pitzer
+
+  &input_deck
+ 
+  ! surface charge layer evaluated over npoints
+  npoint      =   50000
+
+  ! charge density of surface (charges/nm**2)
+  charge_dens =   3.097
+
+  ! pH of solution in contact with surface
+  pH          =   7.0
+
+  ! formation constants between cations and surface
+  Ka          =   3162.278
+  KK          =   0.3162
+  KFe         =   101.649
+ 
+  ! initial bulk concentrations, mol/L
+  bulkcO(4)  =   1d-5  ! KTcO4
+  bulkcO(6)  =   1d-3  ! K2SO4
+
+  ! aqueous equilibrium constants
+  coeff       =  1.000d-14   ! Ka of water
+  tc_coeff    =  9.270d-1    ! Ka of pertechnic acid
+  s_coeff(1)  =  1.000d3     ! Ka1 of sulphuric acid
+  s_coeff(2)  =  1.200d-2    ! Ka2 of sulphuric acid
+
+  ! parameters for Truesdell-Jones equation
+  atrues      =  4.78 10.65 3.71 5.3 0.0 5.31 5.31 0.0
+  btrues      =  0.24 0.21 0.01 0.08 0.0 -0.07 -0.07 0.0
+  
+  ! ionic charges
+  zchge       =  1.0 -1.0 1.0 -1.0 0.0 -2.0 -1.0 0.0
+
+  /
